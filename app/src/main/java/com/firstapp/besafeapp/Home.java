@@ -54,6 +54,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Home extends AppCompatActivity {
+
+    //Welcome
     private FirebaseAuth authProfile;
     private NotificationManager manager;
     //Initialize variables
