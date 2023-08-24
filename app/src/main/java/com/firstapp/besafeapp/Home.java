@@ -149,7 +149,7 @@ public class Home extends AppCompatActivity {
                 if(location!=null){
                     currentLat=location.getLatitude();
                     currentLang=location.getLongitude();
-
+                    //ss
                     supportMapFragment.getMapAsync(new OnMapReadyCallback() {
                         @Override
                         public void onMapReady(GoogleMap googleMap) {
