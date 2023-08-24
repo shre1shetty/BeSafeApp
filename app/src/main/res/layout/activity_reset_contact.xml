@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResetContactActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/RL_contact"
+            android:layout_width="396dp"
+            android:layout_height="692dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/salmon"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textView_reset_contact_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="RESET CONTACTS"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/textView_reset_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_reset_contact_head"
+                android:layout_marginTop="40dp"
+                android:padding="6dp"
+                android:text="Current Guardian Number 1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_reset_contact_old"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_reset_contact"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/EditText_reset_contact_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_reset_contact_old"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:hint="New Number"
+                android:padding="10dp"
+                android:textColor="#555555"
+                android:textColorHint="#403D3D"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <TextView
+                android:id="@+id/textView_reset_contact_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditText_reset_contact_new"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:text="Current Guardian Number 2"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_reset_contact_old2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_reset_contact_2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/EditText_reset_contact_new2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_reset_contact_old2"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:hint="New Number"
+                android:padding="10dp"
+                android:textColor="#555555"
+                android:textColorHint="#403D3D"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView_reset_contact_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditText_reset_contact_new2"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:text="Current Guardian Number 3"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_reset_contact_old_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_reset_contact_3"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/EditText_reset_contact_new3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_reset_contact_old_3"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:hint="New Number"
+                android:padding="10dp"
+                android:textColor="#555555"
+                android:textColorHint="#403D3D"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/button_authenticate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditText_reset_contact_new3"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="70dp"
+                android:background="@color/purple_500"
+                android:textColor="@color/white"
+                android:text="Update" />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressbar"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

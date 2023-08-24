@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".HelpLineNumbersActivity"
+    android:background="#170F27"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:scrollbarSize="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:scrollbars="vertical"
+        android:scrollbarSize="5dp"
+        >
+
+        <ListView
+            android:id="@+id/listView_helpLine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/black"
+            android:divider="@color/salmon"
+            android:dividerHeight="4dp"
+            android:padding="5dp"
+            android:scrollbars="none" />
+        <!--android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="220dp"
+        tools:listitem="@layout/helpline_layout"
+        android:divider="@color/grey"
+        android:dividerHeight="5dp"
+        android:textAlignment="center"
+        android:visibility="visible"
+        />-->
+
+        <ListView
+            android:id="@+id/listView_helpLine_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/black"
+            android:divider="@color/salmon"
+            android:dividerHeight="4dp"
+            android:padding="5dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+    <!--android:layout_marginLeft="200dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="8dp"
+    tools:listitem="@layout/helpline_layout"
+    android:divider="@color/grey"
+    android:dividerHeight="5dp"
+    android:textAlignment="center"
+    android:visibility="visible"-->
+
+    <!--<View
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+          android:id="@+id/divider"
+        android:layout_marginLeft="189dp"
+        android:background="@color/black"/>-->
+
+</LinearLayout>

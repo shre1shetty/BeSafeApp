@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectContactActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:background="@color/salmon">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_contact"
+            android:layout_margin="30dp"
+            app:srcCompat="@drawable/contact"
+            android:maxWidth="150dp"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textview_select_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_contact"
+            android:layout_marginTop="30dp"
+            android:text="Select 3 Contacts"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/black" />
+
+        <!--first Contact-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_contact"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/textview_select_contact"
+            android:text="Contacts"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editText_contact_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_contact"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:hint="Select Contact"
+            android:inputType="phone"
+            android:padding="6dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_contact_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_contact_1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:hint="Select Contact"
+            android:inputType="phone"
+            android:padding="6dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_contact_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_contact_2"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:hint="Select Contact"
+            android:inputType="phone"
+            android:padding="6dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:layout_below="@id/editText_contact_3"
+            android:layout_marginTop="50dp"
+            android:background="@color/purple_500"
+            android:id="@+id/button_select_contact"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:id="@+id/progressBar"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
